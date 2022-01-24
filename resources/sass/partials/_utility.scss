@@ -1,0 +1,26 @@
+.list_inline {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+
+    li {
+        margin: 0 1rem;
+    }
+}
+
+
+.d_flex {
+    display: flex;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.bg_dark {
+    background-color: $dc-dark;
+}
+
+.active {
+    border-bottom: 4px solid $dc-blue;
+}

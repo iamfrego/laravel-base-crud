@@ -1,0 +1,103 @@
+@use 'bootstrap';
+
+// variables
+@import 'partials/variables';
+
+
+// common
+@import 'partials/common';
+
+
+// utilitis
+
+@import 'partials/utility';
+
+// header
+.topnav {
+    background-color: $dc-blue;
+    font-size: 0.7rem;
+    text-align: right;
+
+    &>nav a:not(:last-child) {
+
+        padding-right: 2rem;
+    }
+
+    a {
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+
+
+    }
+}
+
+.menu_wrapper {
+    .logo {
+        img {
+            height: 60px;
+            width: auto;
+        }
+    }
+
+    .main_menu {
+
+        a {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: $dc-gray;
+            padding: 2rem 0;
+            border-bottom: 4px solid transparent;
+
+            &:hover {
+                border-bottom: 4px solid $dc-blue;
+            }
+        }
+    }
+
+}
+
+// main
+
+
+.comics_page {
+    .jumbotron {
+        background-image: url('../img/jumbotron.jpg');
+        height: 400px;
+    }
+
+    .comics {
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .comic {
+                color: $dc-white;
+                margin: 1rem 0.5rem;
+                width: calc((100% / 6) - 1rem);
+                .poster {
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+    }
+}
+
+// footer
+
+body {}
